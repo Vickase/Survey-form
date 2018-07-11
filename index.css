@@ -1,8 +1,16 @@
 #title{
     text-align: center;
+    font-size:60px;
+    font-family: Roboto;
+    font-weight: 900;
+}
+#body-back{
+    background: rgb(0, 145, 145);
 
 }
-
+#main-div{
+    background: rgb(117, 221, 221);
+}
 #description{
 
 }
