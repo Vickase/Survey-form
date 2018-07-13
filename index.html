@@ -6,27 +6,38 @@
 </head>
 <body id="body-back">
 	<main>
-		<div id="main-div">
+		
 			<h1 id="title">Survey form</h1>
+			<div id="main-div">
 			<p id="description">Let us know how we can improve Arts University</p>
-			<form id="survey-form">
-				<ul id="lista-inputs" style="list-style-type: none;">
-					<li>
-						<label for="name" id="name-label" >*Name: </label>
-						<input type="text" placeholder="Enter your name" id="name"required>
-					</li>
-					<li>
-						<label for="email" id="email-label">*Email:</label>
-						<input type="email" placeholder="Enter your email" id="email" required>
-					</li>
-					<li>
-						<label for="age" id="number-label">*Age: </label>
-						<input type="number" placeholder="Age" id="number" min="1" max="99" required>
-					</li>
-				</ul>
-				<div> 
+			<form id="survey-form" method="GET">
+				<div class="opcion">
+					<label for="name" id="name-label" class="label" >*Name: </label>
+					<div class="input">	
+						<input type="text" placeholder="Enter your name" id="name"required class="input-box">
+				</div>
+				</div>	
+					
+				<div class="opcion">	
+					<label for="email" id="email-label" class="label">*Email:</label>
+					<div class="input">
+						<input type="email" placeholder="Enter your email" id="email" required class="input-box">
+				</div>
+				</div>			
+					
+				<div class="opcion">		
+					<label for="age" id="number-label" class="label">*Age: </label>
+					<div class="input">
+						<input type="number" placeholder="Age" id="number" min="1" max="99" required class="input-box">
+				</div>
+				
+				</div>		
+				
+				<div class="label"> 
 					<p>Which option best describes your current role?</p> 
-					<select id="dropdown">
+				</div>
+				<div class="right-Tab">	
+					<select id="dropdown"class="dropdown">
 						<option name="Select an option" disabled>Select an option</option>
 						<option value="Student">Student</option>
 						<option value="Full time job">Full time job</option>
@@ -35,48 +46,99 @@
 						<option value="Other">Other</option>
 					</select>
 				</div>
-				<div >
-					<p>*How likely is that you would recommend freeCodeCamp to a friend?</p>
-					<fieldset id="group1">
-						<input value="def" type="radio"  name="group1" /> Definitely
-						<input value="maybe" type="radio"  name="group1" /> Maybe
-						<input value="not" type="radio"  name="group1" /> Not sure
-					</fieldset>
-					
-        </div>
-        <div>
-					<p>What do you like most in FCC:</p> 
-						<select id="dropdown">
+				<div class="opcion">
+					<div class="label">
+						<p>*How likely is that you would recommend freeCodeCamp to a friend?</p>
+					</div>
+					<div class="right-Tab" >	
+						<ul id="group1" style="list-style: none;">
+							<li class="radio">
+								<label for="Definitely">
+								<input value="def" type="radio"  name="group1" /> Definitely	
+								</label>
+							</li>
+							<li class="radio">
+								<label for="Maybe">
+									<input value="maybe" type="radio"  name="group1" /> Maybe	
+								</label>
+							</li>
+							<li class="radio">
+								<label for="not sure">
+									<input value="not" type="radio"  name="group1" /> Not sure	
+								</label>
+							</li>	
+						</ul>
+					</div>	
+        		</div>
+        		<div class="label">
+					<p>What do you like most in FCC:</p>
+				</div>
+				<div class="right-Tab">
+						<select id="dropdown" class="dropdown">
 							<option value="Select an option">Select an option</option>
 							<option value="Challenges">Challenges</option>
 							<option value="Projects">Projects</option>
 							<option value="Open Source">Open Source</option>
 							<option value="Community">Community</option>
 							
-            </select>
-          </div>
-				<div>
+            			</select>
+          		</div>
+				<div class="opcion">
+          <div class="label">
             <p>Things that should be improved in the future (Check all that apply):</p>
-            <fieldset id="group2">
-              <input value="Front-end Projects" type="checkbox"  name="group2" /> Front-end Projects
-              <input value="Back-end Projects" type="checkbox"  name="group2" /> Back-end Projects
-              <input value="Data Visualization" type="checkbox"  name="group2" /> Data Visualization
-              <input value="Challenges" type="checkbox"  name="group2" /> Challenges
-              <input value="Open Source Community" type="checkbox"  name="group2" /> Open Source Community
-              <input value="Gitter help rooms" type="checkbox"  name="group2" /> Gitter help rooms
-              <input value="Videos" type="checkbox"  name="group2" /> Videos
-              <input value="City Meetups" type="checkbox"  name="group2" /> City Meetups
-              <input value="Wiki" type="checkbox"  name="group2" /> Wiki
-              <input value="Forum" type="checkbox"  name="group2" /> Forum
-              <input value="Additional Courses" type="checkbox"  name="group2" /> Additional Courses
-            </fieldset>
-                
+          </div>
+          <div class="right-Tab">
+            <ul id="group2" style="list-style: none;">
+              <li class="checkbox">
+                <label><input value="Front-end Projects" type="checkbox"  name="group2" /> Front-end Projects
+                </label> 
+              </li>
+              <li class="checkbox">
+                <label for="Back-end Projects">
+                <input value="Back-end Projects" type="checkbox"  name="group2" /> Back-end Projects
+              </label>
+              </li>
+              <li class="checkbox">
+                <label>
+                <input value="Data Visualization" type="checkbox"  name="group2" /> Data Visualization
+              </label>
+              </li>
+              <li class="checkbox">
+                <label><input value="Challenges" type="checkbox"  name="group2" /> Challenges</label>
+              </li>
+              <li class="checkbox">
+                <label><input value="Open Source Community" type="checkbox"  name="group2" /> Open Source Community</label>
+              </li>
+              <li class="checkbox">
+                <label><input value="Gitter help rooms" type="checkbox"  name="group2" /> Gitter help rooms</label>
+              </li>
+              <li class="checkbox">
+                <label><input value="Videos" type="checkbox"  name="group2" /> Videos</label>
+              </li>
+              <li class="checkbox">
+                  <label><input value="City Meetups" type="checkbox"  name="group2" /> City Meetups</label>
+              </li>
+              <li class="checkbox">
+                <label><input value="Wiki" type="checkbox"  name="group2" /> Wiki</label>
+              </li>
+              <li class="checkbox">
+                <label><input value="Forum" type="checkbox"  name="group2" /> Forum</label>
+              </li>
+              <li class="checkbox">
+                <label><input value="Additional Courses" type="checkbox"  name="group2" /> Additional Courses</label>
+              </li>
+            </ul>
+          </div>      
         </div>
-        <div>
-            <p>Any suggestions?:  </p>
-            <textarea placeholder="Enter your comment here..."></textarea>
-            <button type="submit" id="submit"> Submit</button>
+        <div class="opcion">
+            <div class="label"><p>Any suggestions?:  </p>
         </div>
+         <div class="right-Tab">  
+            <textarea placeholder="Enter your comment here..." class="input-box1"></textarea>
+          </div> 
+        </div>
+           <button type="submit" id="submit" style=" resize: vertical;"> Submit</button>
+        
 				
 			</form>
 		</div>
