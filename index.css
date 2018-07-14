@@ -92,7 +92,13 @@
     border: 0px solid;
     margin-left:auto;
     margin-right:auto;
+    cursor: pointer;
 }
+
+#submit:hover {
+    background-color: #3e9edf;
+}
+
 .input-box1{
     
     padding: 5px;
